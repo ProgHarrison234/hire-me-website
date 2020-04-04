@@ -8,6 +8,8 @@ main {background-image: linear-gradient(lightblue, rgb(68, 68, 245), pink,purple
 
 .aboutMe, .theForm, .portFolio {margin-bottom: 100px; border: 5px solid black; padding: 20px; background-color: white;}
 
+.cardFolio {float: left;}
+
 #me {height: 200px; width: 150; float: left;margin-right: 20px;}
 
 footer {background-color: rgb(15, 15, 15); height: 175px; width: 100%; color: snow;position: sticky; flex-shrink: 0;}
@@ -29,4 +31,14 @@ footer {background-color: rgb(15, 15, 15); height: 175px; width: 100%; color: sn
 @media screen and (max-width: 640px) 
 {
     #me {height: 300px; width: 250px; float: left;margin-right: 20px;}
+
+    .cardFolio {margin: auto;}
+
+    #portTwo {font-size: 30px;}
 }
+
+@media print {
+    .container {
+      width: auto;
+    }
+  }
