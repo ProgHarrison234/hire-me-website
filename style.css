@@ -35,10 +35,8 @@ footer {background-color: rgb(15, 15, 15); height: 175px; width: 100%; color: sn
     .cardFolio {margin: auto;}
 
     #portTwo {font-size: 30px;}
-}
 
-@media print {
-    .container {
-      width: auto;
-    }
-  }
+    #madeBy {font-size: 20px;}
+
+    .pageTag {margin-left: 22px;}
+}
