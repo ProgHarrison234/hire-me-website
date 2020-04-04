@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -43,8 +43,8 @@
                             <a class="dropdown-item"
                                 href="https://stackoverflow.com/users/13039918/nick-harrison?tab=profile"
                                 target="blank">StackOverflow</a>
-                            <a class="dropdown-item" href="#" target="blank">Facebook</a>
-                            <a class="dropdown-item" href="#" target="blank">Unknown yet</a>
+                            <a class="dropdown-item disabled" href="#" target="blank">Facebook</a>
+                            <a class="dropdown-item disabled" href="#" target="blank">Unknown yet</a>
                         </div>
                     </li>
                 </ul>
@@ -52,59 +52,65 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row"><br><br><br></div>
-        <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="container contactForm">
+            <div class="row"><br><br><br><br><br></div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h2>Contact Me!</h2>
+                    <form class =  "theForm">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="name" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message to Me</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <label for="exampleInputPassword1">Who are you?</label><br>
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Customer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Employer
+                            </label>
+                            <br><br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Message</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-              <small id="emailHelp" class="form-text text-muted">Details for why you are contacting me</small>
-            </div>
-            <div class="form-check">
-                <label for="exampleInputPassword1">Who are you?</label><br>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Customer
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  Employer
-                </label>
-                <br><br>
-            <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-        </form>
         </div>
     </main>
 
     <footer>
         <br>
-        <h2 id = "madeBy">Made by Me, Nicholas Harrison</h2>
-        <p class = "pageTag">
-            <a class = "pageTag" href="index.html">About Me <span class="sr-only">(current)</span></a>
+        <h2 id="madeBy">Made by Me, Nicholas Harrison</h2>
+        <p class="pageTag">
+            <a class="pageTag" href="index.html">About Me </a>
             <br>
-            <a class = "pageTag" href="portfolio.html">Portfolio</a>
+            <a class="pageTag" href="portfolio.html">Portfolio</a>
             <br>
-            <a class = "pageTag" href="contact.html">Contact Me</a>
+            <a class="pageTag" href="contact.html"><span class="sr-only">(current)</span>Contact Me</a>
         </p>
     </footer>
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
