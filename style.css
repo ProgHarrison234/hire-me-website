@@ -1,31 +1,56 @@
-body,html {height: 100vh;}
-
-body {display: flex; flex-direction: column;}
-
-main {background-image: linear-gradient(lightblue, rgb(68, 68, 245), pink,purple); flex: 1 0 auto;}
-
-.aboutMe {float: left;}
-
-.aboutMe, .theForm, .portFolio {margin-bottom: 100px; border: 5px solid black; padding: 20px; background-color: white;}
-
-.cardFolio {float: left;}
-
-#me {height: 200px; width: 150; float: left;margin-right: 20px;}
-
-footer {background-color: rgb(15, 15, 15); height: 175px; width: 100%; color: snow;position: sticky; flex-shrink: 0;}
-
-#madeBy {text-align: center;}
-
-.pageTag {color: snow; margin-left: 100px;}
-
-@media screen and (max-width: 980px) 
+body,html 
 {
-
+    height: 100vh;
 }
 
-@media screen and (max-width: 768px) 
+body 
 {
-    .pageTag {margin-left: 50px;} 
+    display: flex; flex-direction: column;
+}
+
+main 
+{
+    background-image: linear-gradient(lightblue, rgb(68, 68, 245), pink,purple); flex: 1 0 auto;
+}
+
+.aboutMe 
+{
+    float: left;
+}
+
+.aboutMe, .theForm, .portFolio 
+{
+    margin-bottom: 100px; border: 5px solid black; padding: 20px; background-color: white;
+}
+
+.cardFolio 
+{
+    float: left;
+}
+
+#me 
+{
+    height: 200px; width: 150; float: left;margin-right: 20px;
+}
+
+footer 
+{
+    background-color: rgb(15, 15, 15); height: 175px; width: 100%; color: snow;position: sticky; flex-shrink: 0;
+}
+
+#madeBy 
+{
+    text-align: center;
+}
+
+.pageTag 
+{
+    color: snow;
+}
+
+.socialIcons 
+{
+    margin: 20px;
 }
 
 @media screen and (max-width: 640px) 
@@ -37,6 +62,4 @@ footer {background-color: rgb(15, 15, 15); height: 175px; width: 100%; color: sn
     #portTwo {font-size: 30px;}
 
     #madeBy {font-size: 20px;}
-
-    .pageTag {margin-left: 22px;}
 }
